@@ -238,7 +238,8 @@ h1, h2, h3, h4 {
 }
 
 .nav-cta {
-  display: none;
+  padding: 11px 22px;
+  font-size: 13.5px;
 }
 
 .nav-toggle {
@@ -763,6 +764,176 @@ h1, h2, h3, h4 {
   font-size: 15px;
 }
 
+/* ===== Depoimentos ===== */
+.depoimentos {
+  background: var(--bg-soft);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.testimonial-quote {
+  color: var(--text-dark);
+  font-size: 15px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.testimonial-quote::before {
+  content: "\201C";
+  font-family: var(--font-heading);
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--teal);
+  line-height: 0;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testimonial-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--navy), var(--teal));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--font-heading);
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--text-dark);
+}
+
+.testimonial-location {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ===== FAQ ===== */
+.faq {
+  background: var(--white);
+}
+
+.faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 6px 24px;
+  background: var(--bg-soft);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+  font-weight: 700;
+  font-size: 15.5px;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1.5px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--teal);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 0 0 20px;
+}
+
+/* ===== WhatsApp float ===== */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 200;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+  color: var(--white);
+}
+
 /* ===== Footer ===== */
 .site-footer {
   background: var(--navy-deep);
@@ -848,7 +1019,8 @@ h1, h2, h3, h4 {
 
   .providers-grid,
   .plans-grid,
-  .whyus-grid {
+  .whyus-grid,
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
 
@@ -866,8 +1038,21 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 720px) {
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+  }
+
   .nav-links,
-  .nav-actions .lang-switch {
+  .nav-actions .lang-switch,
+  .nav-cta {
     display: none;
   }
 

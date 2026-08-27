@@ -22,27 +22,11 @@
     "badgeTitle": "+25 años de experiencia y confianza",
     "badgeSubtitle": "Red de profesionales de reconocimiento internacional"
   },
-  "sobre": {
-    "kicker": "Sobre MediBra +Saúde",
-    "title": "Quiénes somos",
-    "p1": "MediBra +Saúde nació para acompañar a quienes deciden construir una nueva vida en Argentina sin resignar algo esencial: cuidar la propia salud con la confianza de casa.",
-    "p2": "Sabemos que llegar a un nuevo país trae desafíos — trámites, un idioma nuevo, una ciudad entera por conocer. Por eso armamos un plan de salud con atención en portugués, un equipo que entiende la realidad de quien migra, y una red médica de primer nivel en toda Argentina.",
-    "p3": "Con más de 25 años de experiencia en el mercado de salud, unimos solidez institucional con una atención cercana y humana — porque una salud tranquila es lo que todo brasileño merece, esté donde esté."
-  },
-  "rede": {
-    "kicker": "Nuestros prestadores",
-    "title": "Red Médica",
-    "subtitle": "Atención con los mejores sanatorios y obras sociales de Argentina.",
-    "provider1Name": "Sanatorio Colegiales",
-    "provider1Desc": "Centro médico de referencia en la Ciudad de Buenos Aires, con atención de alta complejidad.",
-    "provider2Name": "OSPAÑA",
-    "provider2Desc": "Red de prestadores con amplia cobertura y trayectoria reconocida en el sistema de salud argentino.",
-    "note": "Los logotipos e imágenes oficiales de las instituciones se incorporarán próximamente."
-  },
   "planos": {
     "kicker": "Encontrá la cobertura ideal para vos y tu familia",
     "title": "Nuestros Planes",
-    "cta": "Ver Detalles",
+    "cta": "Quiero este plan",
+    "featuredBadge": "Más Elegido",
     "plan1Tag": "Básico",
     "plan1Name": "Seguro Mais Saúde",
     "plan1Desc": "Entrada al sistema de salud argentino, pensada para quien recién llega.",
@@ -58,7 +42,6 @@
     "plan2F3": "Cobertura ampliada de estudios y prácticas",
     "plan2F4": "Atención prioritaria en portugués",
     "plan3Tag": "PMO Completo",
-    "plan3Badge": "Premium",
     "plan3Name": "Mais Saúde Premium",
     "plan3Desc": "La cobertura más completa, con red médica de elite y atención 24/7.",
     "plan3F1": "Todo lo del plan Plus",
@@ -66,11 +49,55 @@
     "plan3F3": "Atención 24/7 especializada",
     "plan3F4": "Cobertura odontológica e internacional"
   },
+  "rede": {
+    "kicker": "Nuestros prestadores",
+    "title": "Red Médica",
+    "subtitle": "Atención con los mejores sanatorios y obras sociales de Argentina.",
+    "provider1Name": "Sanatorio Colegiales",
+    "provider1Desc": "Centro médico de referencia en la Ciudad de Buenos Aires, con atención de alta complejidad.",
+    "provider2Name": "OSPAÑA",
+    "provider2Desc": "Red de prestadores con amplia cobertura y trayectoria reconocida en el sistema de salud argentino.",
+    "note": "Los logotipos e imágenes oficiales de las instituciones se incorporarán próximamente."
+  },
+  "sobre": {
+    "kicker": "Sobre MediBra +Saúde",
+    "title": "Quiénes somos",
+    "p1": "MediBra +Saúde nació para acompañar a quienes deciden construir una nueva vida en Argentina sin resignar algo esencial: cuidar la propia salud con la confianza de casa.",
+    "p2": "Sabemos que llegar a un nuevo país trae desafíos — trámites, un idioma nuevo, una ciudad entera por conocer. Por eso armamos un plan de salud con un equipo que entiende la realidad de quien migra, paso a paso, desde la primera duda hasta la primera consulta.",
+    "p3": "Unimos solidez institucional con una atención cercana y humana — porque una salud tranquila es lo que todo brasileño merece, esté donde esté."
+  },
+  "depoimentos": {
+    "kicker": "Testimonios",
+    "title": "Quienes ya confían en MediBra",
+    "item1Quote": "Llegué a Buenos Aires hace 6 meses y lo que más me tranquilizó fue poder explicar mis síntomas en portugués en la primera consulta.",
+    "item1Name": "Camila R.",
+    "item1Location": "São Paulo → Buenos Aires",
+    "item2Quote": "La afiliación de mi familia fue más simple de lo que esperaba. En pocos días ya teníamos turno para los chicos.",
+    "item2Name": "Rodrigo M.",
+    "item2Location": "Curitiba → Buenos Aires",
+    "item3Quote": "Después de años como paciente de mi obra social en Brasil, encontrar una buena red de hospitales acá era mi mayor preocupación. Resuelto.",
+    "item3Name": "Fernanda A.",
+    "item3Location": "Belo Horizonte → Buenos Aires"
+  },
   "whyus": {
     "title": "¿Por qué MediBra?",
     "item1": "Médicos que hablan portugués",
     "item2": "Red de hospitales de elite en Argentina",
     "item3": "Atención 24/7 especializada"
+  },
+  "faq": {
+    "kicker": "Dudas frecuentes",
+    "title": "Preguntas Frecuentes",
+    "q1": "¿El plan cubre enfermedades preexistentes?",
+    "a1": "Depende del plan y de la evaluación médica previa. Nuestro equipo analiza cada caso de forma individual para darte una respuesta clara antes de la contratación.",
+    "q2": "¿Cuánto tarda la aprobación de mi afiliación?",
+    "a2": "En la mayoría de los casos, el análisis y la aprobación tardan pocos días hábiles luego de enviar la documentación completa.",
+    "q3": "¿Puedo incluir a mi familia en el mismo plan?",
+    "a3": "Sí. Todos nuestros planes aceptan la inclusión de cónyuge e hijos, con condiciones especiales para el grupo familiar.",
+    "q4": "¿Necesito hablar español para usar la red médica?",
+    "a4": "No. Uno de los diferenciales de MediBra es la atención en portugués durante todo el proceso, desde la contratación hasta el consultorio.",
+    "q5": "¿Puedo cambiar de plan después de contratar?",
+    "a5": "Sí, es posible hacer upgrade o downgrade de plan mediante solicitud, respetando los plazos de carencia cuando corresponda."
   },
   "contato": {
     "kicker": "Contacto",
@@ -90,9 +117,8 @@
     "addressValue": "Buenos Aires, Argentina"
   },
   "footer": {
-    "colInicio": "Inicio",
+    "colEmpresa": "Empresa",
     "colPlanos": "Planes",
-    "colSobre": "Sobre Nosotros",
     "colContato": "Contacto",
     "rights": "© 2026 MediBra +Saúde. Todos los derechos reservados.",
     "disclaimer": "Contenido meramente informativo. Condiciones sujetas a análisis y aprobación."

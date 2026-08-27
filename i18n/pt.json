@@ -22,27 +22,11 @@
     "badgeTitle": "+25 anos de experiência e confiança",
     "badgeSubtitle": "Rede de profissionais de reconhecimento internacional"
   },
-  "sobre": {
-    "kicker": "Sobre a MediBra +Saúde",
-    "title": "Quem somos",
-    "p1": "A MediBra +Saúde nasceu para acompanhar quem decide construir uma nova vida na Argentina sem abrir mão de algo essencial: cuidar da própria saúde com a confiança de casa.",
-    "p2": "Sabemos que chegar a um novo país traz desafios — trâmites, um idioma novo, uma cidade inteira para conhecer. Por isso montamos um plano de saúde com atendimento em português, uma equipe que entende a realidade de quem migra, e uma rede médica de primeiro nível em toda a Argentina.",
-    "p3": "Com mais de 25 anos de experiência no mercado de saúde, unimos solidez institucional a um atendimento próximo e humano — porque saúde tranquila é o que todo brasileiro merece, esteja onde estiver."
-  },
-  "rede": {
-    "kicker": "Nossos prestadores",
-    "title": "Rede Médica",
-    "subtitle": "Atendimento com os melhores sanatórios e obras sociais da Argentina.",
-    "provider1Name": "Sanatorio Colegiales",
-    "provider1Desc": "Centro médico de referência na Cidade de Buenos Aires, com atendimento de alta complexidade.",
-    "provider2Name": "OSPAÑA",
-    "provider2Desc": "Rede de prestadores com ampla cobertura e trajetória reconhecida no sistema de saúde argentino.",
-    "note": "Logotipos e imagens oficiais das instituições serão incorporados em breve."
-  },
   "planos": {
     "kicker": "Encontre a cobertura ideal para você e sua família",
     "title": "Nossos Planos",
-    "cta": "Ver Detalhes",
+    "cta": "Quero este plano",
+    "featuredBadge": "Mais Popular",
     "plan1Tag": "Básico",
     "plan1Name": "Seguro Mais Saúde",
     "plan1Desc": "Entrada ao sistema de saúde argentino, pensada para quem está chegando.",
@@ -58,7 +42,6 @@
     "plan2F3": "Cobertura ampliada de estudos e práticas",
     "plan2F4": "Atendimento prioritário em português",
     "plan3Tag": "PMO Completo",
-    "plan3Badge": "Premium",
     "plan3Name": "Mais Saúde Premium",
     "plan3Desc": "A cobertura mais completa, com rede médica de elite e atendimento 24/7.",
     "plan3F1": "Tudo do plano Plus",
@@ -66,11 +49,55 @@
     "plan3F3": "Atendimento 24/7 especializado",
     "plan3F4": "Cobertura odontológica e internacional"
   },
+  "rede": {
+    "kicker": "Nossos prestadores",
+    "title": "Rede Médica",
+    "subtitle": "Atendimento com os melhores sanatórios e obras sociais da Argentina.",
+    "provider1Name": "Sanatorio Colegiales",
+    "provider1Desc": "Centro médico de referência na Cidade de Buenos Aires, com atendimento de alta complexidade.",
+    "provider2Name": "OSPAÑA",
+    "provider2Desc": "Rede de prestadores com ampla cobertura e trajetória reconhecida no sistema de saúde argentino.",
+    "note": "Logotipos e imagens oficiais das instituições serão incorporados em breve."
+  },
+  "sobre": {
+    "kicker": "Sobre a MediBra +Saúde",
+    "title": "Quem somos",
+    "p1": "A MediBra +Saúde nasceu para acompanhar quem decide construir uma nova vida na Argentina sem abrir mão de algo essencial: cuidar da própria saúde com a confiança de casa.",
+    "p2": "Sabemos que chegar a um novo país traz desafios — trâmites, um idioma novo, uma cidade inteira para conhecer. Por isso montamos um plano de saúde com uma equipe que entende a realidade de quem migra, passo a passo, desde a primeira dúvida até a primeira consulta.",
+    "p3": "Unimos solidez institucional a um atendimento próximo e humano — porque saúde tranquila é o que todo brasileiro merece, esteja onde estiver."
+  },
+  "depoimentos": {
+    "kicker": "Depoimentos",
+    "title": "Quem já confia na MediBra",
+    "item1Quote": "Cheguei em Buenos Aires há 6 meses e o que mais me tranquilizou foi poder explicar meus sintomas em português na primeira consulta.",
+    "item1Name": "Camila R.",
+    "item1Location": "São Paulo → Buenos Aires",
+    "item2Quote": "A adesão da minha família foi mais simples do que eu esperava. Em poucos dias já tínhamos consulta marcada para as crianças.",
+    "item2Name": "Rodrigo M.",
+    "item2Location": "Curitiba → Buenos Aires",
+    "item3Quote": "Depois de anos como paciente da minha obra social no Brasil, encontrar uma rede de hospitais boa aqui era minha maior preocupação. Resolvido.",
+    "item3Name": "Fernanda A.",
+    "item3Location": "Belo Horizonte → Buenos Aires"
+  },
   "whyus": {
     "title": "Por que a MediBra?",
     "item1": "Médicos que falam português",
     "item2": "Rede de hospitais de elite na Argentina",
     "item3": "Atendimento 24/7 especializado"
+  },
+  "faq": {
+    "kicker": "Dúvidas frequentes",
+    "title": "Perguntas Frequentes",
+    "q1": "O plano cobre doenças preexistentes?",
+    "a1": "Depende do plano e da análise médica prévia. Nossa equipe avalia cada caso individualmente para te dar uma resposta clara antes da contratação.",
+    "q2": "Quanto tempo demora a aprovação da minha adesão?",
+    "a2": "Na maioria dos casos, a análise e aprovação levam poucos dias úteis após o envio da documentação completa.",
+    "q3": "Posso incluir minha família no mesmo plano?",
+    "a3": "Sim. Todos os nossos planos aceitam a inclusão de cônjuge e filhos, com condições especiais para grupo familiar.",
+    "q4": "Preciso falar espanhol para usar a rede médica?",
+    "a4": "Não. Um dos diferenciais da MediBra é o atendimento em português em toda a jornada, da contratação ao consultório.",
+    "q5": "Posso trocar de plano depois de contratar?",
+    "a5": "Sim, é possível fazer upgrade ou downgrade de plano mediante solicitação, respeitando os prazos de carência quando aplicável."
   },
   "contato": {
     "kicker": "Contato",
@@ -90,9 +117,8 @@
     "addressValue": "Buenos Aires, Argentina"
   },
   "footer": {
-    "colInicio": "Início",
+    "colEmpresa": "Empresa",
     "colPlanos": "Planos",
-    "colSobre": "Sobre Nós",
     "colContato": "Contato",
     "rights": "© 2026 MediBra +Saúde. Todos os direitos reservados.",
     "disclaimer": "Conteúdo meramente informativo. Condições sujeitas a análise e aprovação."

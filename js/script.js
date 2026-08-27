@@ -12,6 +12,15 @@
     });
   }
 
+  const planSelect = document.getElementById("planSelect");
+  if (planSelect) {
+    document.querySelectorAll(".plan-cta[data-plan]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        planSelect.value = btn.getAttribute("data-plan");
+      });
+    });
+  }
+
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
