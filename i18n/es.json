@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "MediBra +Saúde | Plan de salud para brasileños en Argentina",
+    "description": "MediBra +Saúde: el plan de salud hecho por brasileños para brasileños en Argentina. Atención en portugués, red médica de elite y más de 25 años de experiencia."
+  },
+  "nav": {
+    "inicio": "Inicio",
+    "planos": "Planes",
+    "rede": "Red Médica",
+    "sobre": "Sobre Nosotros",
+    "contato": "Contacto",
+    "cta": "Cotizar Ahora"
+  },
+  "hero": {
+    "eyebrow": "Plan de salud para brasileños en Argentina",
+    "titleLine1": "MediBra +Saúde:",
+    "titleLine2": "la seguridad que ya conocés, en Argentina.",
+    "subtitle": "El plan de salud hecho por brasileños para brasileños. Atención en portugués, red médica de elite y acompañamiento en cada etapa de tu nueva vida.",
+    "ctaPrimary": "Cotizar mi plan ahora",
+    "ctaSecondary": "Conocer los planes",
+    "imageAlt": "Familia brasileña siendo recibida por un médico en una clínica en Argentina",
+    "badgeTitle": "+25 años de experiencia y confianza",
+    "badgeSubtitle": "Red de profesionales de reconocimiento internacional"
+  },
+  "sobre": {
+    "kicker": "Sobre MediBra +Saúde",
+    "title": "Quiénes somos",
+    "p1": "MediBra +Saúde nació para acompañar a quienes deciden construir una nueva vida en Argentina sin resignar algo esencial: cuidar la propia salud con la confianza de casa.",
+    "p2": "Sabemos que llegar a un nuevo país trae desafíos — trámites, un idioma nuevo, una ciudad entera por conocer. Por eso armamos un plan de salud con atención en portugués, un equipo que entiende la realidad de quien migra, y una red médica de primer nivel en toda Argentina.",
+    "p3": "Con más de 25 años de experiencia en el mercado de salud, unimos solidez institucional con una atención cercana y humana — porque una salud tranquila es lo que todo brasileño merece, esté donde esté."
+  },
+  "rede": {
+    "kicker": "Nuestros prestadores",
+    "title": "Red Médica",
+    "subtitle": "Atención con los mejores sanatorios y obras sociales de Argentina.",
+    "provider1Name": "Sanatorio Colegiales",
+    "provider1Desc": "Centro médico de referencia en la Ciudad de Buenos Aires, con atención de alta complejidad.",
+    "provider2Name": "OSPAÑA",
+    "provider2Desc": "Red de prestadores con amplia cobertura y trayectoria reconocida en el sistema de salud argentino.",
+    "note": "Los logotipos e imágenes oficiales de las instituciones se incorporarán próximamente."
+  },
+  "planos": {
+    "kicker": "Encontrá la cobertura ideal para vos y tu familia",
+    "title": "Nuestros Planes",
+    "cta": "Ver Detalles",
+    "plan1Tag": "Básico",
+    "plan1Name": "Seguro Mais Saúde",
+    "plan1Desc": "Entrada al sistema de salud argentino, pensada para quien recién llega.",
+    "plan1F1": "Atención en portugués",
+    "plan1F2": "Red de hospitales habilitados",
+    "plan1F3": "Cobertura en consultas y urgencias",
+    "plan1F4": "Cobertura básica en toda Argentina",
+    "plan2Tag": "PMO Low Cost",
+    "plan2Name": "Mais Saúde Plus",
+    "plan2Desc": "Equilibrio entre cobertura ampliada y un valor accesible.",
+    "plan2F1": "Todo lo del plan Básico",
+    "plan2F2": "Red de hospitales de mayor categoría",
+    "plan2F3": "Cobertura ampliada de estudios y prácticas",
+    "plan2F4": "Atención prioritaria en portugués",
+    "plan3Tag": "PMO Completo",
+    "plan3Badge": "Premium",
+    "plan3Name": "Mais Saúde Premium",
+    "plan3Desc": "La cobertura más completa, con red médica de elite y atención 24/7.",
+    "plan3F1": "Todo lo del plan Plus",
+    "plan3F2": "Red de hospitales de elite",
+    "plan3F3": "Atención 24/7 especializada",
+    "plan3F4": "Cobertura odontológica e internacional"
+  },
+  "whyus": {
+    "title": "¿Por qué MediBra?",
+    "item1": "Médicos que hablan portugués",
+    "item2": "Red de hospitales de elite en Argentina",
+    "item3": "Atención 24/7 especializada"
+  },
+  "contato": {
+    "kicker": "Contacto",
+    "title": "Hablemos",
+    "subtitle": "Resolvé tus dudas y recibí una cotización personalizada.",
+    "formName": "Nombre completo",
+    "formEmail": "Correo electrónico",
+    "formPhone": "Teléfono / WhatsApp",
+    "formPlan": "Plan de interés",
+    "formPlanDefault": "Seleccioná un plan",
+    "formMessage": "Mensaje",
+    "formSubmit": "Enviar mensaje",
+    "directTitle": "Atención directa",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Correo electrónico",
+    "addressLabel": "Dirección",
+    "addressValue": "Buenos Aires, Argentina"
+  },
+  "footer": {
+    "colInicio": "Inicio",
+    "colPlanos": "Planes",
+    "colSobre": "Sobre Nosotros",
+    "colContato": "Contacto",
+    "rights": "© 2026 MediBra +Saúde. Todos los derechos reservados.",
+    "disclaimer": "Contenido meramente informativo. Condiciones sujetas a análisis y aprobación."
+  }
+}

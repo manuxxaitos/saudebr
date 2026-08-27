@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title data-i18n="meta.title">MediBra +Saúde</title>
+<meta name="description" data-i18n="meta.description" content="" />
+<link rel="icon" type="image/svg+xml" href="assets/logo/icon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a href="#inicio" class="nav-logo">
+      <img src="assets/logo/logo-horizontal.svg" alt="MediBra +Saúde" />
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio" data-i18n="nav.inicio">Início</a>
+      <a href="#planos" data-i18n="nav.planos">Planos</a>
+      <a href="#rede-medica" data-i18n="nav.rede">Rede Médica</a>
+      <a href="#sobre-nos" data-i18n="nav.sobre">Sobre Nós</a>
+      <a href="#contato" data-i18n="nav.contato">Contato</a>
+      <div class="lang-switch" id="langSwitchMobile">
+        <button type="button" data-lang="pt">PT</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch" id="langSwitchDesktop">
+        <button type="button" data-lang="pt">PT</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="hero-eyebrow" data-i18n="hero.eyebrow">Plano de saúde para brasileiros na Argentina</span>
+        <h1 class="hero-title">
+          <span data-i18n="hero.titleLine1">MediBra +Saúde:</span>
+          <span class="accent" data-i18n="hero.titleLine2">a segurança que você conhece, na Argentina.</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">O plano de saúde feito por brasileiros para brasileiros.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary" data-i18n="hero.ctaPrimary">Cotar meu plano agora</a>
+          <a href="#planos" class="btn btn-outline" data-i18n="hero.ctaSecondary">Conhecer os planos</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img class="hero-media-photo" src="assets/img/hero-family.webp" data-i18n-alt="hero.imageAlt" alt="Família brasileira sendo recebida por um médico em uma clínica na Argentina" />
+      </div>
+    </div>
+
+    <div class="hero-badge">
+      <div class="container" style="display:flex; align-items:center; gap:16px;">
+        <div class="hero-badge-icon">🏅</div>
+        <div>
+          <div class="hero-badge-title" data-i18n="hero.badgeTitle">+25 anos de experiência e confiança</div>
+          <div class="hero-badge-subtitle" data-i18n="hero.badgeSubtitle">Rede de profissionais de reconhecimento internacional</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS -->
+  <section class="section sobre" id="sobre-nos">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <span class="section-kicker" data-i18n="sobre.kicker">Sobre a MediBra +Saúde</span>
+          <h2 class="section-title" data-i18n="sobre.title">Quem somos</h2>
+          <p data-i18n="sobre.p1"></p>
+          <p data-i18n="sobre.p2"></p>
+          <p data-i18n="sobre.p3"></p>
+        </div>
+        <div class="sobre-media">
+          <img src="assets/img/sobre-nos-doctor.webp" alt="Médica explicando a cobertura do plano a um casal de brasileiros" width="900" height="503" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDE MÉDICA -->
+  <section class="section rede" id="rede-medica">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker" data-i18n="rede.kicker">Nossos prestadores</span>
+        <h2 class="section-title" data-i18n="rede.title">Rede Médica</h2>
+        <p class="section-subtitle" style="margin-left:auto;margin-right:auto;" data-i18n="rede.subtitle">Atendimento com os melhores sanatórios e obras sociais da Argentina.</p>
+      </div>
+
+      <div class="rede-banner">
+        <img src="assets/img/rede-medica-banner.webp" alt="Família sendo recebida em uma clínica moderna na Argentina" />
+      </div>
+
+      <div class="providers-grid">
+        <div class="provider-card">
+          <div class="provider-photo">
+            <img src="assets/img/sanatorio-colegiales.webp" alt="Fachada do Sanatorio Colegiales" />
+          </div>
+          <div class="provider-info">
+            <h3 class="provider-name" data-i18n="rede.provider1Name">Sanatorio Colegiales</h3>
+            <p class="provider-desc" data-i18n="rede.provider1Desc"></p>
+          </div>
+        </div>
+        <div class="provider-card">
+          <div class="provider-photo">
+            <img src="assets/img/ospana.webp" alt="Fachada da OSPAÑA" />
+          </div>
+          <div class="provider-info">
+            <h3 class="provider-name" data-i18n="rede.provider2Name">OSPAÑA</h3>
+            <p class="provider-desc" data-i18n="rede.provider2Desc"></p>
+          </div>
+        </div>
+      </div>
+      <p class="providers-note" data-i18n="rede.note"></p>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="section planos" id="planos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker" data-i18n="planos.kicker">Encontre a cobertura ideal para você e sua família</span>
+        <h2 class="section-title" data-i18n="planos.title">Nossos Planos</h2>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Plan 1: Basico -->
+        <div class="plan-card">
+          <div class="plan-icon icon-basic">+</div>
+          <div class="plan-tag" data-i18n="planos.plan1Tag">Básico</div>
+          <h3 class="plan-name" data-i18n="planos.plan1Name">Seguro Mais Saúde</h3>
+          <p class="plan-desc" data-i18n="planos.plan1Desc"></p>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan1F1"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan1F2"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan1F3"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan1F4"></span></li>
+          </ul>
+          <a href="#contato" class="plan-cta" data-i18n="planos.cta">Ver Detalhes</a>
+        </div>
+
+        <!-- Plan 2: Plus -->
+        <div class="plan-card">
+          <div class="plan-icon icon-plus">+</div>
+          <div class="plan-tag" data-i18n="planos.plan2Tag">PMO Low Cost</div>
+          <h3 class="plan-name" data-i18n="planos.plan2Name">Mais Saúde Plus</h3>
+          <p class="plan-desc" data-i18n="planos.plan2Desc"></p>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan2F1"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan2F2"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan2F3"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan2F4"></span></li>
+          </ul>
+          <a href="#contato" class="plan-cta" data-i18n="planos.cta">Ver Detalhes</a>
+        </div>
+
+        <!-- Plan 3: Premium -->
+        <div class="plan-card featured">
+          <div class="plan-badge" data-i18n="planos.plan3Badge">Premium</div>
+          <div class="plan-icon icon-premium">+</div>
+          <div class="plan-tag" data-i18n="planos.plan3Tag">PMO Completo</div>
+          <h3 class="plan-name" data-i18n="planos.plan3Name">Mais Saúde Premium</h3>
+          <p class="plan-desc" data-i18n="planos.plan3Desc"></p>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan3F1"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan3F2"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan3F3"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="planos.plan3F4"></span></li>
+          </ul>
+          <a href="#contato" class="plan-cta" data-i18n="planos.cta">Ver Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US STRIP -->
+  <section class="whyus">
+    <div class="container">
+      <h2 class="whyus-title" data-i18n="whyus.title">Por que a MediBra?</h2>
+      <div class="whyus-grid">
+        <div class="whyus-item">
+          <div class="whyus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span data-i18n="whyus.item1">Médicos que falam português</span>
+        </div>
+        <div class="whyus-item">
+          <div class="whyus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span data-i18n="whyus.item2">Rede de hospitais de elite na Argentina</span>
+        </div>
+        <div class="whyus-item">
+          <div class="whyus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span data-i18n="whyus.item3">Atendimento 24/7 especializado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contato" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker" data-i18n="contato.kicker">Contato</span>
+        <h2 class="section-title" data-i18n="contato.title">Fale Conosco</h2>
+        <p class="section-subtitle" style="margin-left:auto;margin-right:auto;" data-i18n="contato.subtitle"></p>
+      </div>
+
+      <div class="contato-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label data-i18n="contato.formName">Nome completo</label>
+              <input type="text" name="name" required />
+            </div>
+            <div class="form-field">
+              <label data-i18n="contato.formEmail">E-mail</label>
+              <input type="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label data-i18n="contato.formPhone">Telefone / WhatsApp</label>
+              <input type="tel" name="phone" required />
+            </div>
+            <div class="form-field">
+              <label data-i18n="contato.formPlan">Plano de interesse</label>
+              <select name="plan">
+                <option value="" data-i18n="contato.formPlanDefault">Selecione um plano</option>
+                <option value="basico" data-i18n="planos.plan1Name">Seguro Mais Saúde</option>
+                <option value="plus" data-i18n="planos.plan2Name">Mais Saúde Plus</option>
+                <option value="premium" data-i18n="planos.plan3Name">Mais Saúde Premium</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label data-i18n="contato.formMessage">Mensagem</label>
+            <textarea name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contato.formSubmit">Enviar mensagem</button>
+        </form>
+
+        <div class="contact-direct">
+          <h3 data-i18n="contato.directTitle">Atendimento direto</h3>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15.5a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.12 3.18 2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.13.98.36 1.94.68 2.86a2 2 0 0 1-.45 2.11L7.09 9a16 16 0 0 0 6 6l1.31-1.25a2 2 0 0 1 2.11-.45c.92.32 1.88.55 2.86.68A2 2 0 0 1 21 15.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="contact-item-label" data-i18n="contato.whatsappLabel">WhatsApp</div>
+              <div class="contact-item-value">+54 9 11 0000-0000</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" stroke-linecap="round" stroke-linejoin="round" opacity="0"/><path d="M22 6 12 13 2 6" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 6h20v12H2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="contact-item-label" data-i18n="contato.emailLabel">E-mail</div>
+              <div class="contact-item-value">contato@medibra.com.ar</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="contact-item-label" data-i18n="contato.addressLabel">Endereço</div>
+              <div class="contact-item-value" data-i18n="contato.addressValue">Buenos Aires, Argentina</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-badge">
+          <img src="assets/logo/icon.svg" alt="MediBra +Saúde" />
+        </div>
+        <p data-i18n="hero.subtitle"></p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.colInicio">Início</h4>
+        <ul>
+          <li><a href="#inicio" data-i18n="nav.inicio">Início</a></li>
+          <li><a href="#sobre-nos" data-i18n="nav.sobre">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.colPlanos">Planos</h4>
+        <ul>
+          <li><a href="#planos" data-i18n="nav.planos">Planos</a></li>
+          <li><a href="#rede-medica" data-i18n="nav.rede">Rede Médica</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.colContato">Contato</h4>
+        <ul>
+          <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 MediBra +Saúde.</span>
+      <span data-i18n="footer.disclaimer"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
