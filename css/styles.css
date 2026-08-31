@@ -39,6 +39,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1005,7 +1006,7 @@ h1, h2, h3, h4 {
 /* ===== Responsive ===== */
 @media (max-width: 960px) {
   .hero-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero-media {
@@ -1014,14 +1015,14 @@ h1, h2, h3, h4 {
 
   .sobre-grid,
   .contato-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .providers-grid,
   .plans-grid,
   .whyus-grid,
   .testimonials-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .plan-card.featured {
@@ -1033,7 +1034,7 @@ h1, h2, h3, h4 {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1063,6 +1064,7 @@ h1, h2, h3, h4 {
   .site-header.menu-open .nav-links {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     top: 76px;
     left: 0;
@@ -1070,21 +1072,82 @@ h1, h2, h3, h4 {
     background: var(--navy-deep);
     padding: 24px;
     gap: 20px;
+    max-height: calc(100vh - 76px);
+    overflow-y: auto;
   }
 
   .site-header.menu-open .nav-links .lang-switch {
     display: flex;
   }
 
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-badge {
+    text-align: left;
+  }
+
   .form-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .section {
     padding: 64px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .hero-inner {
+    padding: 48px 0 40px;
+    gap: 32px;
+  }
+
+  .hero-badge {
+    padding: 16px 0;
+  }
+
+  .hero-badge .container {
+    gap: 12px;
+  }
+
+  .plan-card {
+    padding: 32px 24px;
+  }
+
+  .contact-form,
+  .contact-direct {
+    padding: 28px 22px;
+  }
+
+  .testimonial-card {
+    padding: 24px;
+  }
+
+  .footer-grid {
+    padding-bottom: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
