@@ -13,10 +13,9 @@
     return path.split(".").reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : undefined), obj);
   }
 
-  async function loadLang(lang) {
+  function loadLang(lang) {
     if (cache[lang]) return cache[lang];
-    const res = await fetch(`i18n/${lang}.json`);
-    const data = await res.json();
+    const data = window.I18N_TRANSLATIONS[lang];
     cache[lang] = data;
     return data;
   }
@@ -48,9 +47,9 @@
     document.documentElement.lang = dict.__lang === "pt" ? "pt-BR" : "es-AR";
   }
 
-  async function setLang(lang) {
+  function setLang(lang) {
     if (!SUPPORTED.includes(lang)) lang = DEFAULT_LANG;
-    const dict = await loadLang(lang);
+    const dict = loadLang(lang);
     dict.__lang = lang;
     applyTranslations(dict);
     localStorage.setItem(STORAGE_KEY, lang);

@@ -4,11 +4,15 @@
 
   if (navToggle && header) {
     navToggle.addEventListener("click", () => {
-      header.classList.toggle("menu-open");
+      const isOpen = header.classList.toggle("menu-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
     document.querySelectorAll(".nav-links a").forEach((link) => {
-      link.addEventListener("click", () => header.classList.remove("menu-open"));
+      link.addEventListener("click", () => {
+        header.classList.remove("menu-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
     });
   }
 
@@ -18,6 +22,74 @@
       btn.addEventListener("click", () => {
         planSelect.value = btn.getAttribute("data-plan");
       });
+    });
+  }
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxCounter = document.getElementById("lightboxCounter");
+  let galleryImages = [];
+  let galleryIndex = 0;
+
+  function updateLightbox() {
+    lightboxImg.src = galleryImages[galleryIndex];
+    lightboxCounter.textContent = `${galleryIndex + 1} / ${galleryImages.length}`;
+  }
+
+  function openLightbox(images, index) {
+    galleryImages = images;
+    galleryIndex = index;
+    updateLightbox();
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  function showPrev() {
+    galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateLightbox();
+  }
+
+  function showNext() {
+    galleryIndex = (galleryIndex + 1) % galleryImages.length;
+    updateLightbox();
+  }
+
+  if (lightbox) {
+    document.querySelectorAll(".gallery-trigger").forEach((el) => {
+      const mainSrc = el.querySelector("img").getAttribute("src");
+      const extra = (el.getAttribute("data-images") || "").split(",").filter(Boolean);
+      const images = [mainSrc, ...extra];
+
+      const trigger = () => openLightbox(images, 0);
+      el.addEventListener("click", trigger);
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          trigger();
+        }
+      });
+    });
+
+    document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+    document.getElementById("lightboxPrev").addEventListener("click", showPrev);
+    document.getElementById("lightboxNext").addEventListener("click", showNext);
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!lightbox.classList.contains("open")) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") showPrev();
+      if (e.key === "ArrowRight") showNext();
     });
   }
 
