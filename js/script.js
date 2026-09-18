@@ -94,15 +94,33 @@
   }
 
   const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
+  const formStatus = document.getElementById("formStatus");
+
+  function getFormMessage(key) {
+    const lang = localStorage.getItem("medibra-lang") === "es" ? "es" : "pt";
+    return (window.I18N_TRANSLATIONS && window.I18N_TRANSLATIONS[lang].contato[key]) || "";
+  }
+
+  if (contactForm && formStatus) {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const data = new FormData(contactForm);
-      const subject = encodeURIComponent("Cotação MediBra +Saúde");
-      const body = encodeURIComponent(
-        `Nome: ${data.get("name")}\nE-mail: ${data.get("email")}\nTelefone: ${data.get("phone")}\nPlano: ${data.get("plan")}\nMensagem: ${data.get("message")}`
-      );
-      window.location.href = `mailto:contato@medibra.com.ar?subject=${subject}&body=${body}`;
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(data).toString(),
+      })
+        .then((response) => {
+          if (!response.ok) throw new Error("Form submission failed");
+          formStatus.textContent = getFormMessage("formSuccess");
+          formStatus.className = "form-status success";
+          contactForm.reset();
+        })
+        .catch(() => {
+          formStatus.textContent = getFormMessage("formError");
+          formStatus.className = "form-status error";
+        });
     });
   }
 })();

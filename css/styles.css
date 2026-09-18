@@ -11,6 +11,7 @@
   --gold-dark: #e0a000;
   --green: #2e9e44;
   --green-light: #4caf50;
+  --red: #c0392b;
   --yellow: #ffd200;
   --teal: #2fb6c7;
   --text-dark: #12203e;
@@ -921,6 +922,30 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px;
+}
+
+.form-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-status {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  min-height: 20px;
+}
+
+.form-status.success {
+  color: var(--green);
+}
+
+.form-status.error {
+  color: var(--red);
 }
 
 .form-field {

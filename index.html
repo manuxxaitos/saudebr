@@ -372,7 +372,9 @@
       </div>
 
       <div class="contato-grid">
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="form-honeypot"><label>Não preencher: <input name="bot-field" /></label></p>
           <div class="form-row">
             <div class="form-field">
               <label for="fieldName" data-i18n="contato.formName">Nome completo</label>
@@ -403,6 +405,7 @@
             <textarea id="fieldMessage" name="message" rows="4"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block" data-i18n="contato.formSubmit">Enviar mensagem</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
 
         <div class="contact-direct">
@@ -420,7 +423,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" stroke-linecap="round" stroke-linejoin="round" opacity="0"/><path d="M22 6 12 13 2 6" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 6h20v12H2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <div>
               <div class="contact-item-label" data-i18n="contato.emailLabel">E-mail</div>
-              <div class="contact-item-value">contato@medibra.com.ar</div>
+              <div class="contact-item-value">medibrasaude@gmail.com</div>
             </div>
           </div>
 
